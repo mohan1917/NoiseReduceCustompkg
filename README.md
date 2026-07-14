@@ -69,7 +69,7 @@ This writes `demo_noisy.wav`, `demo_denoised_stationary.wav`, and
 `demo_denoised_nonstationary.wav` to your working directory, and (if
 matplotlib is installed) shows a before/after spectrogram plot.
 
-## Live/streaming usage (for continuous mic input)
+## Live/streaming usage
 
 `reduce_noise()` needs the whole signal up front — it's for complete
 files. For a continuous mic feed (e.g. a forest deployment), use the
