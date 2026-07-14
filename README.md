@@ -8,8 +8,8 @@ project is ever pulled from PyPI, paywalled, or relicensed.
 
 ## Folder layout
 ```
-noisereducecustom_pkg/          <- unzip and cd into THIS folder
-├── noisereducecustom/          <- the actual importable package
+noisereducecustom_pkg/         
+├── noisereducecustom/          
 │   ├── __init__.py
 │   ├── utils.py
 │   ├── stft_utils.py
@@ -29,7 +29,7 @@ noisereducecustom_pkg/          <- unzip and cd into THIS folder
 
 ## Install (local, editable)
 ```bash
-cd noisereducecustom_pkg      # the folder containing pyproject.toml
+cd noisereducecustom_pkg      
 pip install -e .
 # or, with plotting support:
 pip install -e ".[plotting]"
