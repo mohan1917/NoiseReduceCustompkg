@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "noisereducecustom"
+version = "0.3.0"
+description = "Self-contained spectral-gating audio noise reduction library (no third-party noise-reduction dependency)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "mohan1917" }
+]
+keywords = ["audio", "noise reduction", "spectral gating", "signal processing", "bioacoustics"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+]
+dependencies = [
+    "numpy>=1.20",
+    "scipy>=1.7",
+]
+
+[project.optional-dependencies]
+plotting = ["matplotlib>=3.4"]
+demo = ["matplotlib>=3.4"]
+
+[project.urls]
+Homepage = "https://github.com/mohan1917/noisereducecustom"
+
+[tool.setuptools.packages.find]
+include = ["noisereducecustom*"]
