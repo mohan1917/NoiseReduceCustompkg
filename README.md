@@ -6,7 +6,7 @@ optional, for plotting). It does not import or wrap the third-party
 `noisereduce` package in any way — so it keeps working even if that
 project is ever pulled from PyPI, paywalled, or relicensed.
 
-## Folder layout (this is the ONLY package folder you need)
+## Folder layout
 ```
 noisereducecustom_pkg/          <- unzip and cd into THIS folder
 ├── noisereducecustom/          <- the actual importable package
@@ -137,7 +137,7 @@ python tests/test_core.py
 
 ---
 
-## What each file does (for your demo write-up)
+## What each file does
 
 ### `noisereducecustom/__init__.py`
 The package's front door. Imports and re-exports the public functions
